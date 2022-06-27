@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="https://i.postimg.cc/442qY2vv/iconfinder-messages-16-171351.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Hanu Chat</title>
+    <style>
+        body{
+           background-color: powderblue;
+           display: flex;
+           justify-content: center;
+           flex-direction: column;
+           align-items: center;
+        } 
+        img{
+            width: 250px;
+            height: 250px;
+            margin-top: 100px;
+            border-radius: 50px;
+            border-style: groove;
+        }
+        input,button,select,option{
+            border: none;
+            outline: 0;
+            border-radius: 3px;
+            padding: 10px 20px;
+        }
+        button:hover{
+            transform: scale(1.001);
+        }
+        form{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            width: 60vw;
+        }
+        form > *{
+            margin: 10px;
+        }
+        footer{
+            position: absolute;
+            bottom: 11;
+            right: 11;
+            border-style :dashed;
+            border-radius: 7px;
+        }
+        label
+        {
+            font-weight: bold;
+        }
+        ul{
+            border-style: dotted;
+            border-radius: 7px;
+            padding: 20px;
+            line-height: 2em;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="https://i.postimg.cc/J0PLPbzj/conversation.png" alt="">
+    <form action="/chat.html">
+        <label for="userName" >User Name</label>
+        <input type="text" name='userName'id="userName" required>
+        <label for="room">Select Room</label>
+        <select id="room" name="room">
+            <option name="room" value="Room 1">Room 1</option>
+            <option name="room" value="Room 2">Room 2</option>
+          </select>
+          
+        <button type="submit">Submit</button>
+    </form>
+    <footer><ul type="none">
+        <li>Aditya Pandey</li>
+        <li>Rakshit Joshi</li>
+        <li>Ayush Bajpai</li>
+        <li>Aditya Kumar</li>
+        <li>Mohammad Ashfaq</li>
+    </ul></footer>
+</body>
+</html>
